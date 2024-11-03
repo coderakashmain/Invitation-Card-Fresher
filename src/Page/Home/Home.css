@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=IM+Fell+English+SC&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.loading{
+    z-index: 100;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading h1{
+    font-size: 4rem;
+    position: absolute;
+    top: 48%;
+    left:40%;
+    transform: translate(0%,0%);
+
+}
+.word5{
+    margin: 0 0 0 7rem;
+}
+.word6{
+    margin: 3rem 0 0 0rem;
+}
+
+.backTheme{
+    height: 100svh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.backTheme .line{
+    width: 100rem;
+    height: 1.9rem;
+    background-color: #bababa;
+}
+.line1{
+    
+    transform: rotate(56deg);
+    position: absolute;
+    top: 68%;
+    left: -29%;
+
+}
+.line2{
+    transform: rotate(304deg);
+    position: absolute;
+    top: 68%;
+    right: -29%;
+
+}
+.line3{
+    transform: rotate(315deg);
+    position: absolute;
+    bottom: 44%;
+    left: -29%;
+
+
+}
+.line4{
+    transform: rotate(45deg);
+    position: absolute;
+    bottom:44%;
+    right: -29%;
+
+}
+.line5{
+    width: 34rem;
+    height: 1.9rem;
+    background-color: #bababa;
+    position: absolute;
+    bottom: 0%;
+    left: 32%;
+    z-index: 1;
+
+}
+.front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+   min-height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(33px);
+    background-color: rgb(29 14 72 / 1%);
+}
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boxIn{
+    height: 100%;
+    width: 50rem;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    /* background-color: #4d4d4d; */
+}
+.boxIn b{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 01.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem 1rem;
+    background-color:#ffffff52;
+    text-align: center;
+    border-radius: 2rem;
+    /* color:#000; */
+}
+.boxIn h1{
+   font-family: "Great Vibes", cursive;
+     font-weight: 500;
+    font-style: normal;
+    margin: 4rem 0 0 0 ;
+    font-size: 7rem;
+    letter-spacing: 0.6rem;
+    color: #fff;
+    text-align: center;
+}
+.boxIn h2{
+    font-size: 1.8rem;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 1.7rem 0 0 0;
+}
+.boxIn h2 h2{
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 0 0;
+  padding: 0.9rem;
+}
+.boxIn h3{
+    margin : 3rem 0 0 0;
+    font-size: 2.4rem;
+    font-family: "Great Vibes", cursive;
+     font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.boxIn h4{
+    margin:  2rem 0 0 0;
+    font-size: 2.3rem;
+    font-family: "Great Vibes", cursive;
+     font-weight: 500;
+    font-style: normal;
+}
+.boxIn p{
+    margin:  2.8rem 0 0 0;
+    font-size: 2rem;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.boxIn button{
+    padding: 0.4rem 2rem;
+    outline: none;
+    border: none;
+    background-color: #FFEB3B;
+    font-size: 2rem;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin: 1.3rem 0 0 0;
+}
+
+
+@media only screen and (max-width: 820px){
+    .boxIn{
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 791px){
+    html{
+        font-size: 90%;
+    }
+    .boxIn{
+        margin: 6rem 0 0 0 ;
+    }
+}
+@media only screen and (max-width: 690px){
+    html{
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 70%;
+    }
+}
