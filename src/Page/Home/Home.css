@@ -13,19 +13,55 @@
     align-items: center;
 }
 
+.loading-box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .loading h1{
     font-size: 4rem;
-    position: absolute;
+    /* position: absolute;
     top: 48%;
-    left:40%;
-    transform: translate(0%,0%);
+    left:30%;
+    transform: translate(0%,0%); */
+    text-transform: uppercase;
 
 }
+.word4{
+    margin: 0 10rem 0 0rem;
+}
 .word5{
-    margin: 0 0 0 7rem;
+    margin: 0 0 0 9rem;
 }
 .word6{
-    margin: 3rem 0 0 0rem;
+    margin: 8rem 0 0 0rem;
+}
+.word7{
+    margin:0 14rem 0 0rem;
+}
+.word8{
+    margin: 0 0 0 7rem;
+}
+.word9{
+    margin: 9rem 0 0 0rem;
+}
+.word16{
+    margin: 0 0 0 7rem;
+}
+.word14{
+    margin: 0 9rem 0 0rem;
+}
+.word17{
+    margin: 9rem 6rem 0 0rem;
+}
+.word18{
+    margin: 9rem 0 0 13rem;
 }
 
 .backTheme{
@@ -187,7 +223,7 @@
         font-size: 90%;
     }
     .boxIn{
-        margin: 6rem 0 0 0 ;
+        margin: 3rem 0 0 0 ;
     }
 }
 @media only screen and (max-width: 690px){

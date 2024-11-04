@@ -14,7 +14,8 @@ const Video = () => {
         useGSAP(()=>{
                 gsap.to(videoRef.current,{
                     // left : 0,
-                    scale : 1,
+                    // scale : 1,
+                    translateX : 0,
                     duration : 0.5,
 
                 })
