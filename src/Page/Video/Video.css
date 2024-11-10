@@ -45,9 +45,3 @@ aside{
 
 }
 
-@media (max-width : 500px) {
-  .video-title h2{
-    font-size: 0.8rem;
-  }
-  
-}
