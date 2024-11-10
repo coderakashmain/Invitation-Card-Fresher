@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react'
-import "./Video.css"
+import React, {  useRef } from 'react'
+import './Video.css'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
