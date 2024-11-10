@@ -4,7 +4,8 @@ import './App.css'
 import Home from './Page/Home/Home'
 import Video from './Page/Video/Video'
 import Invitation from './Page/Video/InvitationVideo/Invitation'
-import Previous from './Page/Video/Previous'
+import Previous from './Page/Video/PreviousVideo/Previous'
+import Images from './Page/Video/Images/Images'
 
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
     {
       path : 'PYVideo',
       element : <><Previous/></>
+    },
+    {
+      path : 'Images',
+      element : <><Images/></>
     }]
     }
   ])

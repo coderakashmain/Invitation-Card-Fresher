@@ -309,7 +309,11 @@ const Home = () => {
             <div className="front">
                 <div className="box">
                     <div className="boxIn">
+                        <div className="b-box">
                         <b>@COMPUTER SCIENCE DEPARTEMT</b>
+                        <b>{name}</b>
+
+                        </div>
 
                         <h1>Fresh Code <br /> Fiesta</h1>
                         <h2> <p>You are Invited!</p>Attend The Fresher's Party with us.</h2>

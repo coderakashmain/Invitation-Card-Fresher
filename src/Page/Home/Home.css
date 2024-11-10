@@ -196,18 +196,28 @@ header, .loading, .backTheme {
     flex-direction: column;
     /* background-color: #4d4d4d; */
 }
-.boxIn b{
+.boxIn .b-box{
     position: absolute;
-    top: 2%;
-    left: 2%;
-    font-size: 01.1rem;
+   top: 2%;
+   left: 0%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 0 1rem ;
+
+}
+.boxIn b{
+    font-size: 01rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0.5rem 1rem;
     background-color:#ffffff52;
     text-align: center;
     border-radius: 2rem;
+    text-transform: uppercase;
     /* color:#000; */
 }
+
 .boxIn h1{
    font-family: "Great Vibes", cursive;
      font-weight: 500;

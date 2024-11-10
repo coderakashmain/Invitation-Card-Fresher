@@ -25,8 +25,8 @@ const Video = () => {
         <div className='aside' ref={videoRef}>
 
         <div className="video-title" >
-            <h2 className={`${location.pathname === '/video' ? 'invition' : '' }`}><NavLink to= '/video'>Invitation Video</NavLink>  </h2>
-            <h2 className={`${location.pathname === '/video/PYVideo' ? 'previous' : '' }`}><NavLink to= '/video/PYVideo'>Previous Party's Video</NavLink>  </h2>
+        <NavLink to= '/video'> <h2 className={`${location.pathname === '/video' ? 'invition' : '' }`}>Invitation Video </h2></NavLink> 
+        <NavLink to= '/video/PYVideo'>   <h2 className={`${location.pathname === '/video/PYVideo' ? 'previous' : '' }`}>Previous Party's Video  </h2></NavLink>
         </div>
         <hr />
         <div className="video-box">
