@@ -1,12 +1,18 @@
 
 import {  RouterProvider, createBrowserRouter } from 'react-router-dom'
-import './App.css'
-import Home from './Page/Home/Home'
-import Video from './Page/Video/Video'
-import Invitation from './Page/Video/InvitationVideo/Invitation'
-import Previous from './Page/Video/PreviousVideo/Previous'
-import Images from './Page/Video/Images/Images'
+import { lazy, Suspense } from 'react'
 
+import './App.css'
+const Home = lazy(()=> import ('./Page/Home/Home'));
+// import Home from './Page/Home/Home'
+// import Video from './Page/Video/Video'
+const Video = lazy(()=> import ('./Page/Video/Video'));
+// import Invitation from './Page/Video/PreviousVideo/Previous'
+const Invitation = lazy(()=> import ('./Page/Video/PreviousVideo/Previous'));
+// import Previous from './Page/Video/InvitationVideo/Invitation'
+const Previous = lazy(()=> import ('./Page/Video/InvitationVideo/Invitation'));
+// import Images from './Page/Video/Images/Images'
+const Images = lazy(()=> import ('./Page/Video/Images/Images'));
 
 function App() {
 
@@ -19,14 +25,14 @@ function App() {
     },
     {
       path : 'video',
-      element : <><Video/></>,
+      element : <><Suspense fallback = {<div>Loading...</div>}> <Video/></Suspense></>,
       children : [{
         path : '',
-        element : <><Invitation/></>
+        element : <><Previous/></>
       },
     {
       path : 'PYVideo',
-      element : <><Previous/></>
+      element : <><Invitation/></>
     },
     {
       path : 'Images',

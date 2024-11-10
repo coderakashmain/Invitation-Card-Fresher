@@ -1,0 +1,27 @@
+.invite-video{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+    padding: 2rem 0 0 01rem;
+}
+.InvitaionVideoList{
+    height: 10rem;
+    width: 10rem;
+    /* flex-basis: 00px; */
+    margin: 0.5rem;
+    background-color: rgba(105, 105, 105, 0.408);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.InvitaionVideoList video ,.InvitaionVideoList img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    
+}
