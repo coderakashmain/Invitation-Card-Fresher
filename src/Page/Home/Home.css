@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=IM+Fell+English+SC&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+header, .loading, .backTheme {
+    height: 100vh;
+    height: 100svh; /* For supported browsers */
+}
 .loading{
     z-index: 100;
     background-color: #000;
-    height: 100%;
+    height: 100svh;
     width: 100%;
     position: fixed;
-
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .loading-box{
-    height: 100%;
+    height: 100svh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -22,6 +25,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.loading, .loading-box, header {
+    height: 100vh;  
+    height: 100svh; 
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.loading-box h1{
+   text-align: center;
+   
 }
 
 .loading h1{
@@ -62,6 +84,41 @@
 }
 .word18{
     margin: 9rem 0 0 13rem;
+}
+.light{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+}
+.light1{
+    
+    left: 0%;
+    top: 100%;
+    background-color: #69083e;
+}
+.light2{
+    right: 0%;
+    top: -100%;
+  
+    background-color: #021065;
+   
+}
+.light3{
+    left: -100%;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+    background-color: #650263;
+   
+}
+.light4{
+    right: -100%;
+    bottom: 50%;
+    height: 50%;
+    width: 100%;
+    background-color: #cfcfcfa5;
+   
 }
 
 .backTheme{
@@ -120,13 +177,13 @@
     top: 0;
     left: 0;
     z-index: 2;
-   min-height: 100vh;
+     min-height: 100svh;
     width: 100%;
     backdrop-filter: blur(33px);
     background-color: rgb(29 14 72 / 1%);
 }
 .box{
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -155,8 +212,8 @@
    font-family: "Great Vibes", cursive;
      font-weight: 500;
     font-style: normal;
-    margin: 4rem 0 0 0 ;
-    font-size: 7rem;
+    margin: 3rem 0 0 0 ;
+    font-size: 6rem;
     letter-spacing: 0.6rem;
     color: #fff;
     text-align: center;
@@ -169,7 +226,7 @@
     text-align: center;
     margin: 1.7rem 0 0 0;
 }
-.boxIn h2 h2{
+.boxIn h2 p{
   display: flex;
   justify-content: center;
   margin: 0.5rem 0 0 0;
@@ -209,9 +266,24 @@
     font-style: normal;
     border-radius: 0.4rem;
     cursor: pointer;
-    margin: 1.3rem 0 0 0;
+    margin: 1.3rem 0 1rem 0;
 }
 
+
+@media only screen and (min-width: 821px){
+    .boxIn{
+        width: 80vw;
+    }
+    .boxIn h1 {
+        margin: 1rem 0 0 0;
+    }
+    .boxIn h2 {
+        margin: 0.7rem 0 0 0;
+    }
+    .boxIn h3 {
+        margin: 2rem 0 0 0;
+    }
+}
 
 @media only screen and (max-width: 820px){
     .boxIn{
@@ -222,13 +294,13 @@
     html{
         font-size: 90%;
     }
-    .boxIn{
-        margin: 3rem 0 0 0 ;
-    }
 }
 @media only screen and (max-width: 690px){
     html{
         font-size: 80%;
+    }
+    .boxIn h1{
+        margin: 7rem 0 0 0;
     }
 }
 @media only screen and (max-width: 600px){

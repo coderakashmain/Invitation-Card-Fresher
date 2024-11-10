@@ -18,15 +18,16 @@ const Home = () => {
     useEffect(() => {
         // Check if a name is already saved in sessionStorage
         let storedName = sessionStorage.getItem('username');
-        const animationPlayed = localStorage.getItem('animationPlayed');
         
         if (!storedName) {
             // If no name is saved, prompt the user
-            while (!storedName && !animationPlayed) {
+            while (!storedName) {
                 storedName = prompt('Enter your name, dear?');
+                
             }
             // Save the name to sessionStorage
             sessionStorage.setItem('username', storedName);
+            setUpdate(true);
         }
 
         // Set the name in state
@@ -35,7 +36,7 @@ const Home = () => {
 
     useGSAP(()=>{
         const animationPlayed = localStorage.getItem('animationPlayed');
-        if (!animationPlayed) {
+        if (animationPlayed) {
 
 
       
@@ -76,9 +77,9 @@ const Home = () => {
             duration : 0.5,
             opacity :0
         })
-        .to('.word4', { bottom: 300, duration: 0.2, autoAlpha: 0 })
-        .to('.word5', { x: 300, duration: 0.2, autoAlpha: 0 })
-        .to('.word6', { y: -300, duration: 0.2, autoAlpha: 0 })
+        .to('.word4', { y: 200,opacity : 0, duration: 0.8, autoAlpha: 0 },'same')
+        .to('.word5', { y: 200,opacity : 0, duration: 0.8, autoAlpha: 0 },'same')
+        .to('.word6', { y: 200,opacity : 0, duration: 0.4, autoAlpha: 0 },'same')
         .from('.word7',{
             top : -300,
             duration : 0.5,
@@ -93,7 +94,10 @@ const Home = () => {
             x : -300,
             duration : 0.5,
             opacity :0
-        })
+        },'all1')
+        .to('.light3' ,{left : '100%',ease: "power4.inout", duration : 1},'all1')
+        .to('.light4' ,{right:'100%',ease: "power4.inout", duration : 1},'all1')
+
         .to('.word7', { top: 300, duration: 0.2, autoAlpha: 0 })
         .to('.word8', { bottom: 300, duration: 0.2, autoAlpha: 0 })
         .to('.word9', { x: 300, duration: 0.2, autoAlpha: 0 })
@@ -101,7 +105,9 @@ const Home = () => {
             y : -300,
             duration : 0.5,
             opacity :0
-        })
+        },'all')
+        .to('.light1' ,{top : '-100%',ease: "power4.inout", duration : 0.5},'all')
+        .to('.light2' ,{top :'100%',ease: "power4.inout", duration : 0.5},'all')
         .to('.word10', { y: 300, duration: 0.2, autoAlpha: 0 })
         .from('.word11',{
             y : 300,
@@ -152,7 +158,7 @@ const Home = () => {
         .to('.word14', { x: 300, duration: 0.2, autoAlpha: 0 })
         
         .to('.loading', {display : 'none',borderRadius : 50, duration: 0.5, autoAlpha: 0 })
-        setUpdate(true);
+       
         
         localStorage.setItem('animationPlayed', 'true');
 
@@ -191,6 +197,7 @@ const Home = () => {
             opacity : 0 ,
             duration : 0.2
         })
+       
     }
     else{
         gsap.to('.loading', { display :'none',borderRadius : 50, duration: 0.00001, autoAlpha: 0 })
@@ -287,6 +294,10 @@ const Home = () => {
                 <h1 className='word18'>Us!</h1>
                     
                 </div>
+                 <div className="light1 light"></div>
+                <div className="light2 light"></div> 
+                {/* <div className="light3 light"></div>
+                <div className="light4 light"></div> */}
             </div>
             <div className="backTheme">
                 <div className="line1 line"></div>
@@ -300,11 +311,11 @@ const Home = () => {
                     <div className="boxIn">
                         <b>@COMPUTER SCIENCE DEPARTEMT</b>
 
-                        <h1>Fresher's Party</h1>
-                        <h2> <h2>You are Invited!</h2>Attend The Fresher's Party with us.</h2>
+                        <h1>Fresh Code <br /> Fiesta</h1>
+                        <h2> <p>You are Invited!</p>Attend The Fresher's Party with us.</h2>
 
                         <h3>Place : Computer Science Department</h3>
-                        <h4>Date : Update Soon</h4>
+                        <h4>Date : 13-11-2024</h4>
                         <p>Coding aur coffee, yahi hai hamara style,
                         Fresher's Party mein aaiye, banaye kuch yaadon ka file!</p>
                         <button onClick= {navigation}>videos</button>
