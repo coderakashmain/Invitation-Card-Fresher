@@ -2,6 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
 }
 body,html{
   background-color: rgb(12, 1, 41);

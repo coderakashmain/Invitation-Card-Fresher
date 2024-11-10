@@ -19,7 +19,6 @@
 }
 .InvitaionVideoList video ,.InvitaionVideoList img{
     aspect-ratio: 1/1;
-    object-fit: cover;
     width: 100%;
     height: auto;
     cursor: pointer;
