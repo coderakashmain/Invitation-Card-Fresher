@@ -36,7 +36,7 @@ const Home = () => {
 
     useGSAP(()=>{
         const animationPlayed = localStorage.getItem('animationPlayed');
-        if (!animationPlayed) {
+        if (animationPlayed) {
 
 
       
