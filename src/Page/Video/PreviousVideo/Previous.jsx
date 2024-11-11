@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Previous.css';
 import video1 from '../VideosPhotoes/PreviousParty.mp4';
+import video2 from '../VideosPhotoes/Dance5.mp4';
+import video3 from '../VideosPhotoes/Dance6.mp4';
+import video4 from '../VideosPhotoes/Dance7.mp4';
+
 import icon from '../VideosPhotoes/lottieflow-play-05-000000-easey.json';
 import Lottie from 'lottie-react';
 import dance from '../VideosPhotoes/Dancemp4.mp4';
@@ -8,15 +12,21 @@ import photo1 from '../VideosPhotoes/photo1.jpg';
 import photo2 from '../VideosPhotoes/photo2.jpg';
 import photo3 from '../VideosPhotoes/photo3.jpg';
 import photo4 from '../VideosPhotoes/photo4.jpg';
+import photo5 from '../VideosPhotoes/photo5.jpg';
+import photo6 from '../VideosPhotoes/photo6.jpg';
+import photo7 from '../VideosPhotoes/photo7.jpg';
+import photo8 from '../VideosPhotoes/photo8.jpg';
+import photo9 from '../VideosPhotoes/photo9.jpg';
+import photo10 from '../VideosPhotoes/photo10.jpg';
 
 const Previous = () => {
   const videoRef = useRef([]);
   const photoRef = useRef([]);
   const [activeVideoIndex, setActiveVideoIndex] = useState(null);
-  const InvitaionVideo = [video1, dance];
+  const InvitaionVideo = [video1, dance,video2,video3,video4];
   const [isPlaying, setIsPlaying] = useState(Array(InvitaionVideo.length).fill(false)); // Track playing status of each video
 
-  const InvitaionPhoto = [photo1, photo2, photo3, photo4];
+  const InvitaionPhoto = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10];
 
   const handleVideoClick = (index) => {
     videoRef.current.forEach((video, i) => {
