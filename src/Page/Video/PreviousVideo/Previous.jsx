@@ -4,6 +4,7 @@ import video1 from '../VideosPhotoes/PreviousParty.mp4';
 import video2 from '../VideosPhotoes/Dance5.mp4';
 import video3 from '../VideosPhotoes/Dance6.mp4';
 import video4 from '../VideosPhotoes/Dance7.mp4';
+import video5 from '../VideosPhotoes/Dance8.mp4'
 
 import icon from '../VideosPhotoes/lottieflow-play-05-000000-easey.json';
 import Lottie from 'lottie-react';
@@ -23,7 +24,7 @@ const Previous = () => {
   const videoRef = useRef([]);
   const photoRef = useRef([]);
   const [activeVideoIndex, setActiveVideoIndex] = useState(null);
-  const InvitaionVideo = [video1, dance,video2,video3,video4];
+  const InvitaionVideo = [video1, dance,video2,video3,video4,video5];
   const [isPlaying, setIsPlaying] = useState(Array(InvitaionVideo.length).fill(false)); // Track playing status of each video
 
   const InvitaionPhoto = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10];
